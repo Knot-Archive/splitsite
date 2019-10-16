@@ -12,7 +12,6 @@ pipeline {
             steps{
                 dir("{env.WORKSPACE}")
                 echo '[INFO] stat deploy'
-                echo 'ansible-playbook'
                 echo '[INFO] finish deploy'
             }
         }
