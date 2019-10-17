@@ -10,9 +10,12 @@ pipeline {
         }
         stage('ansible playbook'){
             steps{
-                dir("{env.WORKSPACE}")
                 echo '[INFO] stat deploy'
                 echo '[INFO] finish deploy'
+            }
+            steps {
+                echo 'start deploy'
+                sh 'http://127.0.0.1:5000/playbook_webserver_fi-ailyun'
             }
         }
     }
