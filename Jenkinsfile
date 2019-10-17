@@ -11,7 +11,7 @@ pipeline {
         stage('ansible playbook'){
             steps {
                 echo 'start deploy'
-                sh 'http://host.docker.internal:5000/playbook_webserver_fi-ailyun'
+                sh 'http://172.17.0.1:5000/playbook_webserver_fi-ailyun'
             }
         }
     }
