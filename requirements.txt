@@ -23,7 +23,7 @@ requests==2.33.0
 rq==1.0
 singledispatch==3.4.0.3
 six==1.12.0
-soupsieve==1.9.1
+soupsieve==2.8.4
 SQLAlchemy==1.3.3
 urllib3==2.7.0
 Werkzeug>=2.2.3
